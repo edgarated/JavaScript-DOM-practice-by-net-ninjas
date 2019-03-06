@@ -1,18 +1,15 @@
+//To get the parent nodes
+const bookList = document.querySelector("#book-list");
+console.log(bookList.parentElement);
+//still works for parent nodes
+console.log(bookList.parentNode);
 
-let books = document.querySelectorAll("#book-list li .name");
-// console.log(names);
+//To go further up
+console.log(bookList.parentElement.parentElement);
 
-books.forEach(function(book){
-// book.textContent
-//to append an item to the textContent
-book.textContent += " : (book title)"
+//To get the child nodes;
+console.log(bookList.children);
 
 
-});
 
-
-let books = document.querySelector("#book-list");
-books.innerHTML = "<h1>Hello</h1>";
-//to append an item to the innerHTML
-books.innerHTML += "<p>let's do this for the culture</p>"
 
