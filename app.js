@@ -1,5 +1,7 @@
 
+
 let book = document.querySelector("#book-list");
+
 
 console.log(book.nextSibling)
 console.log(book.nextElementSibling);
@@ -10,4 +12,3 @@ console.log(book.previousElementSibling);
  console.log(book.previousElementSibling.querySelector("p").innerHTML += " <br/> Hello, world");
 
 
- 
