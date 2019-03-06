@@ -1,5 +1,5 @@
-let h2 = document.querySelector("#book-list h2");
 //when h2 tag is clicked it displays the properties
+let h2 = document.querySelector("#book-list h2");
 h2.addEventListener("click", function(e){
 console.log(e.target);
 console.log(e);
