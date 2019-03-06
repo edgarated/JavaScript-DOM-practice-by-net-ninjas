@@ -1,13 +1,14 @@
 
-//To get the parent nodes
-const bookList = document.querySelector("#book-list");
-console.log(bookList.parentElement);
-//still works for parent nodes
-console.log(bookList.parentNode);
 
-//To go further up
-console.log(bookList.parentElement.parentElement);
+let book = document.querySelector("#book-list");
 
-//To get the child nodes;
-console.log(bookList.children);
+
+console.log(book.nextSibling)
+console.log(book.nextElementSibling);
+console.log(book.previousSibling)
+console.log(book.previousElementSibling);
+
+//To change the element in the node
+ console.log(book.previousElementSibling.querySelector("p").innerHTML += " <br/> Hello, world");
+
 
