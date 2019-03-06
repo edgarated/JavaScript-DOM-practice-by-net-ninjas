@@ -1,3 +1,4 @@
+
 let books = document.querySelectorAll("#book-list li .name");
 // console.log(names);
 
@@ -14,3 +15,4 @@ let books = document.querySelector("#book-list");
 books.innerHTML = "<h1>Hello</h1>";
 //to append an item to the innerHTML
 books.innerHTML += "<p>let's do this for the culture</p>"
+
