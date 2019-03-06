@@ -1,18 +1,17 @@
+const banner = document.querySelector("#page-banner");
 
-let books = document.querySelectorAll("#book-list li .name");
-// console.log(names);
+//TO find out the type of the node
+console.log("#page-banner node type is : ", banner.nodeType);
 
-books.forEach(function(book){
-// book.textContent
-//to append an item to the textContent
-book.textContent += " : (book title)"
+//To find out the name of the node
+console.log("#page-banner node type is : ",banner.nodeName);
+
+//To know if the know has a child
+console.log("#page-banner node type is : ",banner.hasChildNodes());
+
+//To clone a node : "true" goes deep to show the contents of the node
+const bannerClone = banner.cloneNode(true);
+console.log(bannerClone);
 
 
-});
-
-
-let books = document.querySelector("#book-list");
-books.innerHTML = "<h1>Hello</h1>";
-//to append an item to the innerHTML
-books.innerHTML += "<p>let's do this for the culture</p>"
 
