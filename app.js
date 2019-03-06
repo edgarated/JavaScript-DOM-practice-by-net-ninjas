@@ -1,17 +1,13 @@
-const banner = document.querySelector("#page-banner");
 
-//TO find out the type of the node
-console.log("#page-banner node type is : ", banner.nodeType);
+//To get the parent nodes
+const bookList = document.querySelector("#book-list");
+console.log(bookList.parentElement);
+//still works for parent nodes
+console.log(bookList.parentNode);
 
-//To find out the name of the node
-console.log("#page-banner node type is : ",banner.nodeName);
+//To go further up
+console.log(bookList.parentElement.parentElement);
 
-//To know if the know has a child
-console.log("#page-banner node type is : ",banner.hasChildNodes());
-
-//To clone a node : "true" goes deep to show the contents of the node
-const bannerClone = banner.cloneNode(true);
-console.log(bannerClone);
-
-
+//To get the child nodes;
+console.log(bookList.children);
 
