@@ -1,23 +1,24 @@
-//when h2 tag is clicked it displays the properties
-let h2 = document.querySelector("#book-list h2");
-h2.addEventListener("click", function(e){
-console.log(e.target);
-console.log(e);
+//Delete a button
+const list = document.querySelectorAll("#book-list ul");
+list.forEach(function(lists){
+
+  lists.addEventListener("click", function(e){
+
+   if(e.target.className == "delete"){
+   const li = e.target.parentElement;
+   li.parentElement.removeChild(li);
+
+   }
+
+  })
 
 
 })
 
+//to prevent a default action
+const link = document.querySelector("#page-banner a");
+link.addEventListener("click" , function(e){
+e.preventDefault();
 
 
-//This event listener deletes  an item when the delete button is clicked
-const btns = document.querySelectorAll("#book-list .delete");
-btns.forEach(function(btn){
-btn.addEventListener("click" , function(e){
-
-const li = e.target.parentElement;
-  seebtns = li.parentElement.removeChild(li)
-  console.log(seebtns);
-
-});
-
-});
+})
