@@ -12,13 +12,17 @@ list.forEach(function(lists){
 
   })
 
-
 })
 
-//to prevent a default action
-const link = document.querySelector("#page-banner a");
-link.addEventListener("click" , function(e){
-e.preventDefault();
 
-
+//Add book list
+const addForm = document.forms["add-book"];
+addForm.addEventListener("submit", function(e){
+ 
+//    //prevents the default action
+  e.preventDefault();
+const value = addForm.querySelector('input[type="text"]').value;
+console.log(value);
 })
+
+
