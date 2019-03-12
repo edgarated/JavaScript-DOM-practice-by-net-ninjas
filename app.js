@@ -35,6 +35,19 @@ list.appendChild(li);
 
 });
 
+//hide books
+const checkBtn = document.querySelector("#hide");
+checkBtn.addEventListener("change", function(e){
+
+if(checkBtn.checked){
+list.style.display = "none"
+
+}else{
+  list.style.display = "block";
+}
+
+});
+
 
 
 
